@@ -1,0 +1,379 @@
+/*
+Theme Name: roofwithfleck
+Theme URI: http://roofwithfleck.com
+Author: Mason McIntyre
+Author URI: http://masonmcintyre.com
+Description: roofwithfleck Theme
+Version: 1.0
+*/
+
+/* roofwithfleck Theme styles */
+/*
+ tan: #fccc9c
+ black: #000000
+ grey: #333333
+
+
+ dark-blue:   #6194bc
+ sky-blue:    #a5d1f3
+ light-blue:  #d0eaff
+ red:         #e4001b
+ light-red:   #ff0020
+ gray:        #ececec
+ light-black: #606060
+*/
+/* General Start */
+html, body {
+  font-size: 16px;
+  font-family: sans-serif, FontAwesome;
+  font-size:100%;
+}
+
+body{
+  /*background-color:#e6e6e6*/
+  background-color: lightslategrey;
+}
+
+* { box-sizing: border-box; }
+
+a,span {
+  color:#333333 !important;
+}
+a{
+  border-bottom: 2px solid;
+  border-color: #333333;
+  transition: all .5s;
+}
+a:hover{
+  color:#e4001b !important;
+  border-color: transparent;
+  transition: all .5s;
+  text-decoration: none !important;
+}
+a:focus{
+  color:#e4001b !important;
+  text-decoration: none !important;
+  border-color: transparent;
+}
+h1,h2,h3,h4,h5,h6{
+  /* background-color: #ffffff; */
+}
+h1{
+  font-weight:600 !important;
+}
+h4{
+  line-height: 1.5 !important;
+}
+.inner-width{
+  max-width:1200px;
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+/* General End */
+
+/* Slick Slider Start */
+.slider-container{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.slider-two{
+  display: block;
+  margin: 0 auto;
+  width 70%;
+}
+.slider-two div h3{
+  width: 90%;
+  line-height: 500px;
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  display: block;
+  margin: 10px auto;
+}
+.slick-prev, .slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.slick-prev {
+	left: -25px;
+}
+.slick-next {
+	right: -25px;
+}
+.slick-prev::before, .slick-next::before {
+	font-size: 20px;
+  font-family: FontAwesome;
+	line-height: 1;
+	opacity: .75;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-prev, .slick-next {
+	font-size: 0;
+	line-height: 0;
+	cursor: pointer;
+	color: transparent;
+}
+.slick-prev::before {
+	/* content: '←'; */
+  content: '\f137';
+}
+.slick-next::before {
+	/* content: '→'; */
+  content: '\f138';
+}
+/* Slick Slider End */
+
+
+/* Header Start */
+.header-container{
+  display:table;
+}
+.header{
+  position:fixed;
+  width:100%;
+  background-color:rgba(26, 26, 26, 0.8);
+  padding:20px 0;
+  z-index:10;
+}
+.header .inner-width{
+  padding: 0 50px;
+}
+.header a,span {
+  color:#6194bc !important;
+}
+.header a{
+  border-bottom: 2px solid;
+  border-color: transparent;
+  transition: all .5s;
+}
+.header a:hover{
+  color:#ff0020 !important;
+  border-bottom: 2px solid;
+  transition: all .5s;
+  text-decoration: none !important;
+}
+.header a:focus{
+  color:#ff0020 !important;
+  text-decoration: none !important;
+  border-color:transparent;
+}
+.header a.phone:hover{
+  border-color: transparent;
+}
+.primary-nav ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.primary-nav ul li{
+  display:inline-block;
+}
+.primary-nav ul li a{
+  font-size: 1.2em;
+}
+.primary-nav ul li span{
+  font-size: 1.3em;
+}
+/* Header End */
+
+/* About Start */
+.about{
+  margin:70px 0 0 0;
+  padding: 50px 20px 0;
+}
+.about h3{
+  font-weight:600;
+  margin:0;
+}
+.about h4{
+  margin:0;
+}
+.about h5 {
+  margin: 15px 0;
+}
+.about .about-title{
+  display:table;
+  margin:auto;
+  padding:20px 0;
+}
+.about div.about-title h2{
+  display:table-cell !important;
+  padding:0 0 2px 0;
+  border-bottom:2px solid #000000;
+}
+/* About End */
+
+/* Markets Start */
+.markets{
+  margin: 30px 0 0;
+}
+.markets-title{
+  display:table;
+  margin:auto;
+  padding:20px;
+}
+.markets-title h2{
+  display:table-cell !important;
+  padding:0 0 2px 0;
+  border-bottom:2px solid #000000;
+}
+.markets-slider-row{
+  margin: 10px 0 0;
+}
+/* Markets End */
+
+/* Consultation Start */
+.form-consultation{
+  background-color: red;
+  padding: 3% 4%;
+  border-radius: 20px;
+}
+/* Consultation End */
+
+/* Footer Start */
+.footer{
+  background-color: #333333;
+  padding: 10px 0;
+  margin: 50px 0 0;
+}
+.footer h6{
+  background-color: #333333;
+  color::#6194bc;
+  text-align: center;
+  font-size:1em;
+}
+.footer div.contact-title{
+  display:table;
+  margin:auto;
+}
+.footer div.contact-title h5{
+  display:table-cell;
+  background-color: #333333;
+  color: #6194bc;
+  border-bottom: 2px solid #6194bc;
+  text-align: center;
+  font-size:1em;
+}
+.footer h6 a{
+  background-color: #333333;
+  color: #6194bc !important;
+  border-color: transparent;
+  text-align: center;
+}
+.footer h6 a:hover{
+  color:#ff0020 !important;
+  border-color: #ff0020;
+}
+.footer .phone:hover{
+  color:#ff0020;
+  border-color:transparent;
+}
+/* Footer End */
+/* Media Queries Start */
+@media (min-width: 992px){
+  .about h1{
+    font-size:4em !important;
+  }
+  .about h3{
+    font-weight:600;
+    margin:0;
+  }
+  .about h4{
+    margin:0;
+  }
+  .about h5 {
+    margin: 15px 0;
+  }
+  .about-description p{
+    text-align:left;
+  }
+}
+
+@media(min-width: 768px){
+  .about h3{
+    font-size:3em !important;
+  }
+  .about h4{
+    font-size:3em !important;
+  }
+  .about h5 {
+    font-size:2em !important;
+  }
+  .about p{
+    font-size:1.3em !important;
+  }
+}
+
+@media (max-width: 992px){
+  h4{
+  	margin: 0;
+  	padding: 0 15px;
+  }
+  p{
+    margin: 0;
+    padding: 0 15px;
+  }
+  .about h4{
+    margin:20px 0 0;
+    padding:0;
+  }
+  .about h5 {
+    padding: 0 0 0 20px;
+    margin: 10px 0 0;
+  }
+  .about p{
+  	margin:20px 0 0;
+  }
+  .about .experience h5{
+  	padding: 0 0 0 10px;
+  }
+  .about .experience p{
+    margin:10px 0 0;
+    padding:0 0 0 20px;
+  }
+  .about-description p{
+    text-align:center;
+  }
+  .market-item{
+      width:48%;
+  }
+}
+@media(max-width: 768px){
+  h1{
+    font-size:2em !important;
+  }
+  h4{
+  	font-size:1em !important;
+  }
+  .market-item{
+    width:100%;
+    margin: 30px 0;
+  }
+
+}
+@media(max-width: 320px){
+  h1{
+    font-size:28px !important;
+  }
+}
+/* Media Queries End */

@@ -1,0 +1,33 @@
+{
+  "name": "roofwithfleck",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=roofwithfleck:* node ./bin/www",
+    "start-fs": "NOTES_MODEL=models/notes-fs node ./bin/www",
+    "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
+    "buildbootstrap": "cp variables.less bower_components/bootstrap/less && cd bower_components/bootstrap && grunt",
+    "server1": "NOTES_MODEL=models/notes-fs PORT=3001 node ./bin/www",
+    "server2": "NOTES_MODEL=models/notes-fs PORT=3002 node ./bin/www",
+    "start-mongodb": "MONGO_URL=mongodb://localhost:27017/ NOTES_MODEL=models/estimate-mongodb node ./bin/www",
+    "server1-mongodb": "MONGO_URL=mongodb://localhost/chap07 NOTES_MODEL=models/notes-mongodb PORT=3001 node ./bin/www",
+    "server2-mongodb": "MONGO_URL=mongodb://localhost/chap07 NOTES_MODEL=models/notes-mongodb PORT=3002 node ./bin/www"
+  },
+  "postinstall": "./node_modules/bower/bin/bower install",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "file-stream-rotator": "^0.2.0",
+    "fs-extra": "^4.0.1",
+    "grunt-cli": "^1.2.0",
+    "mongodb": "^2.2.31",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}
