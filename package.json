@@ -1,9 +1,9 @@
 {
-  "name": "roofwithfleck",
+  "name": "mahun",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=roofwithfleck:* node ./bin/www",
+    "start": "DEBUG=mahun:* node ./bin/www",
     "start-fs": "NOTES_MODEL=models/notes-fs node ./bin/www",
     "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
     "buildbootstrap": "cp variables.less bower_components/bootstrap/less && cd bower_components/bootstrap && grunt",
