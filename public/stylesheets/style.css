@@ -169,7 +169,7 @@ h4 span.job-title {
 }
 .skills ul li{
     margin:7px 0;
-    font-size:16px;
+    font-size:14px;
 }
 /* About End */
 /* Footer Start */
@@ -214,12 +214,6 @@ h4 span.job-title {
         margin:20px 0 0;
         padding:0;
     }
-    /*
-    .about h5 {
-        padding: 0 0 0 20px;
-        margin: 10px 0 0;
-    }
-    */
 }
 
 @media(min-width: 768px){
@@ -236,6 +230,9 @@ h4 span.job-title {
         font-size:18px;
     }
     .about p{
+        font-size:16px;
+    }
+    .skills ul li{
         font-size:16px;
     }
 }
