@@ -14,201 +14,197 @@ Version: 1.0
    grey: #333333
 */
 
-
-/* General Start */
-body{
-    /*background-color:#e6e6e6*/
-    background-color: #ffffff;
-    height:1000px;
-}
-
-a,span {
-    color:#333333 !important;
-}
-a{
-    border-bottom: 2px solid;
-    border-color: #333333;
-    transition: all .5s;
-}
-a:hover{
-    color:#fccc9c !important;
-    border-color: transparent;
-    transition: all .5s;
-    text-decoration: none !important;
-}
-a:focus{
-    color:#fccc9c !important;
-    text-decoration: none !important;
-    border-color: transparent;
-}
-h1,h2,h3,h4,h5,h6{
-    background-color: #ffffff;
-}
-h1{
-    font-weight:600;
-    font-size:32px;
-}
-h4{
-    line-height: 1.5;
-}
-p{
-    margin: 0;
-    padding: 0 15px;
-}
-.inner-width{
-    max-width:1200px;
-    width:100%;
-    display:block;
-    margin:0 auto;
-}
-/* General End */
-
-/* Header Start */
-.header{
-    position:fixed;
-    width:100%;
-    background-color:rgba(26, 26, 26, 0.8);
-    padding:20px 0;
-    z-index:10;
-}
-.header .inner-width{
-    padding: 0 50px;
-}
-.header a,span {
-    color:#fccc9c !important;
-}
-.header a{
-    border-bottom: 2px solid;
-    border-color: transparent;
-    transition: all .5s;
-}
-.header a:hover{
-    color:#ffe5cc !important;
-    border-bottom: 2px solid;
-    transition: all .5s;
-    text-decoration: none !important;
-}
-.header a:focus{
-    color:#fccc9c !important;
-    text-decoration: none !important;
-    border-color:transparent;
-}
-.header a.phone:hover{
-    border-color: transparent;
-}
-.primary-nav ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-.primary-nav ul li{
-    display:inline-block;
-}
-.primary-nav ul li a{
-    font-size: 18px;
-}
-.primary-nav ul li span{
-    font-size: 21px;
-}
-.hamburger{
-    display:none;
-}
-/* Header End */
-
-/* About Start */
-.about{
-    margin-top:70px;
-    margin-bottom:0;
-    padding: 50px 20px 0;
-}
-.about h3{
-    font-weight:600;
-    margin:0;
-}
-.about h4{
-    margin:0;
-}
-.about h5 {
-    margin: 15px 0;
-}
-.about p{
-    margin:20px 0 0;
-}
-.name h1{
-    margin:0;
-}
-.name h1 span{
-    color:#333333 !important;
-}
-.objective{
-    margin:50px 0 0;
-}
-h4 span.job-title {
-    color:#333333 !important;
-}
-.experience{
-    margin:50px 0 0;
-}
-.experience h5{
-    padding: 0 15px;
-}
-.experience p{
-    margin:10px 0 0;
-    padding:0 0 0 20px;
-}
-.education{
-    margin:50px 0 0;
-}
-.skills{
-    margin:50px 0 0;
-}
-.skills ul{
-    list-style:none;
-    padding:0 0 0 15px;
-    margin:20px 0 0;
-}
-.skills ul li{
-    margin:7px 0;
-    font-size:14px;
-}
-/* About End */
-/* Footer Start */
-.footer{
-    background-color: #333333;
-    padding: 10px 0;
-    margin: 50px 0 0;
-}
-.footer h6{
-    background-color: #333333;
-    color: #fccc9c;
-    text-align: center;
-    font-size:14px;
-}
-.footer h6 a{
-    background-color: #333333;
-    color: #fccc9c !important;
-    border-color: transparent;
-    text-align: center;
-}
-.footer h6 a:hover{
-    color:#ffe5cc !important;
-    border-color: #ffe5cc;
-}
-.footer .phone:hover{
-    color:#ffe5cc;
-    border-color:transparent;
-}
-/* Footer End */
-
 /* Media Queries Start */
 @media(min-width: 320px){
-    h1{
-        font-size:28px;
+    /* General Start */
+    body{
+        /*background-color:#e6e6e6*/
+        background-color: #ffffff;
+        height:1000px;
     }
+
+    a,span {
+        color:#333333 !important;
+    }
+    a{
+        border-bottom: 2px solid;
+        border-color: #333333;
+        transition: all .5s;
+    }
+    a:hover{
+        color:#fccc9c !important;
+        border-color: transparent;
+        transition: all .5s;
+        text-decoration: none !important;
+    }
+    a:focus{
+        color:#fccc9c !important;
+        text-decoration: none !important;
+        border-color: transparent;
+    }
+    h1,h2,h3,h4,h5,h6{
+        background-color: #ffffff;
+    }
+    h1{
+        font-weight:600;
+        font-size:3em;
+    }
+    h4{
+        line-height: 1.5;
+    }
+    p{
+        margin: 0;
+        padding: 0 15px;
+    }
+    .inner-width{
+        max-width:1200px;
+        width:100%;
+        display:block;
+        margin:0 auto;
+    }
+    /* General End */
+
+    /* header Start */
+    .header{
+        position:fixed;
+        width:100%;
+        background-color:rgba(26, 26, 26, 0.8);
+        padding:20px 0;
+        z-index:10;
+        top:0;
+    }
+    .header .inner-width{
+        padding: 0 50px;
+    }
+    .header a,span {
+        color:#fccc9c !important;
+    }
+    .header a{
+        border-bottom: 2px solid;
+        border-color: transparent;
+        transition: all .5s;
+    }
+    .header a:hover{
+        color:#ffe5cc !important;
+        border-bottom: 2px solid;
+        transition: all .5s;
+        text-decoration: none !important;
+    }
+    .header a:focus{
+        color:#fccc9c !important;
+        text-decoration: none !important;
+        border-color:transparent;
+    }
+    .header a.phone:hover{
+        border-color: transparent;
+    }
+    .primary-header ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    .primary-header ul li{
+        display:inline-block;
+    }
+    .primary-header ul li a{
+        font-size: 1.5em;
+    }
+    .primary-header ul li span{
+        font-size: 1.5em;
+    }
+    .hamburger{
+        display:none;
+    }
+    /* header End */
+
+    /* About Start */
+    .about{
+        margin-top:70px;
+        margin-bottom:0;
+        padding: 50px 20px 0;
+    }
+    .about h3{
+        font-weight:600;
+        margin:0;
+    }
+    .about h4{
+        margin:0;
+    }
+    .about h5 {
+        margin: 15px 0;
+    }
+    .about p{
+        margin:20px 0 0;
+    }
+    .name h1{
+        margin:0;
+    }
+    .name h1 span{
+        color:#333333 !important;
+    }
+    .objective{
+        margin:50px 0 0;
+    }
+    h4 span.job-title {
+        color:#333333 !important;
+    }
+    .experience{
+        margin:50px 0 0;
+    }
+    .experience h5{
+        padding: 0 15px;
+    }
+    .experience p{
+        margin:10px 0 0;
+        padding:0 0 0 20px;
+    }
+    .education{
+        margin:50px 0 0;
+    }
+    .skills{
+        margin:50px 0 0;
+    }
+    .skills ul{
+        list-style:none;
+        padding:0 0 0 15px;
+        margin:20px 0 0;
+    }
+    .skills ul li{
+        margin:7px 0;
+        font-size:1em;
+    }
+    /* About End */
+    /* Footer Start */
+    .footer{
+        background-color: #333333;
+        padding: 10px 0;
+        margin: 50px 0 0;
+    }
+    .footer h6{
+        background-color: #333333;
+        color: #fccc9c;
+        text-align: center;
+        font-size:1em;
+    }
+    .footer h6 a{
+        background-color: #333333;
+        color: #fccc9c !important;
+        border-color: transparent;
+        text-align: center;
+    }
+    .footer h6 a:hover{
+        color:#ffe5cc !important;
+        border-color: #ffe5cc;
+    }
+    .footer .phone:hover{
+        color:#ffe5cc;
+        border-color:transparent;
+    }
+    /* Footer End */
     h4{
         margin: 0;
         padding: 0 15px;
-        font-size:16px;
+        font-size:'';
     }
     .about h4{
         margin:20px 0 0;
@@ -217,32 +213,32 @@ h4 span.job-title {
 }
 
 @media(min-width: 768px){
-    h1{
-        font-size:38px;
+    .about h1{
+        font-size:4em;
     }
     .about h3{
-        font-size:32px;
+        font-size:2.5em;
     }
     .about h4{
-        font-size:24px;
+        font-size:1.5em;
     }
     .about h5 {
-        font-size:18px;
+        font-size:1.35em;
     }
     .about p{
-        font-size:16px;
+        font-size:1.25em;
     }
     .skills ul li{
-        font-size:16px;
+        font-size:1.25em;
+    }
+    .footer h6{
+        font-size:1.1em;
     }
 }
 @media (min-width: 992px){
     .about p{
         margin: 0px;
         padding: initial;
-    }
-    .about h1{
-        font-size:48px;
     }
     .about h3{
         font-weight:600;

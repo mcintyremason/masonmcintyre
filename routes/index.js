@@ -5,6 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('root/index', {
     title: 'Mason McIntyre',
+    styles: '',
+    scripts: '',
     docreate: 'create',
    });
 });
