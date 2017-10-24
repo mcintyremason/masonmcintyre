@@ -14,9 +14,7 @@ router.get('/', function(req, res, next) {
 router.get('/draw', function(req, res, next) {
   res.render('projects/draw', {
     title: 'Draw',
-    styles: `<style type="text/css">
-              canvas { border: 1px solid; }
-            </style>`,
+    styles: ``,
     scripts: `<script src="http://code.jquery.com/jquery-latest.min.js"></script>
               <script type="text/javascript" src="/javascripts/draw.js"></script>`,
     docreate: 'create',
