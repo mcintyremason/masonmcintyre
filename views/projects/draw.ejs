@@ -2,36 +2,40 @@
 <html>
   <% include ../common/head %>
   <body>
-    <%include ../common/navbar %>
-    <div class="drawDiv">
-      <h1>Draw</h1>
-      <div>
-        <select name="shapes" id="shapes">
-          <option value="rectangle">Rectangle</option>
-          <option value="line">Line</option>
-          <option value="ellipse">Ellipse</option>
-          <option value="text">Text</option>
-        </select>
-        <button type="button" id="undo">Undo</button>
-        <button type="button" id="redo">Redo</button>
-        <button type="button" id="save">Save</button>
-        <button type="button" id="load">Load</button>
+    <%include ../common/header %>
+    <div class="drewContainer">
+      <div class="drawDiv">
+        <div class="drawMenuContainer">
+          <h1 class="drawTitle">Draw</h1>
+          <div>
+            <select name="shapes" id="shapes">
+              <option value="rectangle">Rectangle</option>
+              <option value="line">Line</option>
+              <option value="ellipse">Ellipse</option>
+              <option value="text">Text</option>
+            </select>
+            <button type="button" id="undo">Undo</button>
+            <button type="button" id="redo">Redo</button>
+            <button type="button" id="save">Save</button>
+            <button type="button" id="load">Load</button>
+          </div>
+          <div>
+            Outline<input type="checkbox" id="outline">
+            Fill <input type="checkbox" id="fill">
+            <button type="button" id="forward">Forward</button>
+            <button type="button" id="backward">Backward</button>
+          </div>
+          <div>
+            Background <input align="bottom" type="color" name="colors" id="cBackground">
+            Outline <input align="bottom" type="color" name="colors" id="cOutline">
+            Fill <input align="bottom" type="color" name="colors" id="cFill">
+          </div>
+        </div>
+        <div>
+          <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <% include ../common/footer %>
       </div>
-      <div>
-        Outline<input type="checkbox" id="outline">
-        Fill <input type="checkbox" id="fill">
-        <button type="button" id="forward">Forward</button>
-        <button type="button" id="backward">Backward</button>
-      </div>
-      <div>
-        Background <input align="bottom" type="color" name="colors" id="cBackground">
-        Outline <input align="bottom" type="color" name="colors" id="cOutline">
-        Fill <input align="bottom" type="color" name="colors" id="cFill">
-      </div>
-      <div>
-        <canvas id="canvas" width="600" height="600"></canvas>
-      </div>
-      <% include ../common/footer %>
     </div>
   </body>
 </html>
