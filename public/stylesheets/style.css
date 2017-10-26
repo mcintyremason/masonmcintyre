@@ -157,12 +157,14 @@ p{
 }
 .objective{
     margin:50px 0 0;
+    padding:0;
 }
 h4 span.job-title {
     color:#333333 !important;
 }
 .experience{
     margin:50px 0 0;
+    padding:0;
 }
 .experience h5{
     padding: 0 15px;
@@ -173,9 +175,11 @@ h4 span.job-title {
 }
 .education{
     margin:50px 0 0;
+    padding:0;
 }
 .skills{
     margin:50px 0 0;
+    padding:0;
 }
 .skills ul{
     list-style:none;
@@ -304,6 +308,9 @@ h4{
     }
 }
 @media (min-width: 992px){
+    .header .inner-width{
+        padding: 0 50px;
+    }
     .header h1{
         font-size:3em;
     }
