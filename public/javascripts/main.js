@@ -16,9 +16,19 @@ function initSliderOne(){
  });
 }
 
-$(document).ready(function(){
-  setTimeout(function(){
-    $('.slider').slick();
-  }, 50);
+function registerEventListeners(){
+  var hamburger = document.getElementById('hamburger');
 
+  hamburger.addEventListener('click', function(e){
+    var mobileNavContainer = document.getElementById('mobileNavContainer');
+    console.log(parseInt(mobileNavContainer.style.height));
+    if(parseInt(mobileNavContainer.style.height == 0) || !parseInt(mobileNavContainer.style.height))
+      mobileNavContainer.style.height = '70px';
+    else
+      mobileNavContainer.style.height = '0px';
+  })
+}
+
+$(document).ready(function(){
+  registerEventListeners();
 });
