@@ -1,0 +1,346 @@
+/*
+  Tan: #c59c67
+  Light Tan: #dac09e
+  Compliment Blue: #6790C5
+*/
+body {
+  margin: 0; }
+
+.App {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer";
+  background-color: #ffffff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+  margin: 0; }
+  .App a {
+    color: #c59c67;
+    border-color: #c59c67;
+    border-bottom: 2px solid;
+    transition: all .5s;
+    text-decoration: none; }
+  .App a:hover {
+    color: #dac09e;
+    border-color: transparent; }
+  .App a:focus {
+    color: #dac09e;
+    border-color: transparent; }
+  .App h1, .App h2, .App h3, .App h4, .App h5, .App h6, .App p {
+    margin: 0; }
+  .App h1 {
+    font-size: 1.75em; }
+  .App h2 {
+    font-size: 1.5em; }
+  .App h3 {
+    font-size: 1.25em; }
+  .App h4 {
+    font-size: 1em; }
+  .App h5 {
+    font-size: .9em; }
+  .App h6 {
+    font-size: .8em; }
+  .App li, .App p {
+    font-size: .9em;
+    line-height: 1.3em;
+    text-align: justify; }
+  .App li {
+    margin: 10px 0; }
+  .App .hide {
+    display: none; }
+  .App .header {
+    width: 100%;
+    max-height: 100px;
+    grid-area: header;
+    background-color: rgba(15, 15, 15, 0.9);
+    transition: all .5s;
+    display: grid;
+    grid-template-columns: 5% auto auto 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". header-name header-nav ."; }
+    .App .header a {
+      color: #c59c67;
+      border-bottom: 2px solid;
+      border-color: transparent;
+      transition: all .5s;
+      text-decoration: none; }
+    .App .header a:hover {
+      color: #dac09e;
+      border-color: #dac09e; }
+    .App .header a:focus {
+      color: #dac09e;
+      border-color: #dac09e; }
+    .App .header .header-name {
+      grid-area: header-name;
+      margin: 25px 0; }
+    .App .header .header-nav {
+      grid-area: header-nav;
+      display: flex;
+      justify-self: end; }
+      .App .header .header-nav ul {
+        display: none; }
+  .App .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". experiences-container ." ". education-container ." ". misc-container .";
+    /*
+    .objective-container{
+      grid-area:objective-container;
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "objective-title"
+        "objective"
+      ;
+
+      margin:30px 0 0;
+
+      .objective-title{
+        grid-area: objective-title;
+      }
+
+      .objective{
+        grid-area:objective;
+        justify-self: start;
+        margin:10px 0 0 10px;
+      }
+    }
+    */ }
+    .App .main .experiences-container {
+      grid-area: experiences-container;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "experiences-title" "experiences";
+      margin: 30px 0 0; }
+      .App .main .experiences-container .experiences-title {
+        grid-area: experiences-title; }
+      .App .main .experiences-container .experiences {
+        grid-area: experiences; }
+        .App .main .experiences-container .experiences .experience:first-child {
+          margin: 10px 0 0 10px; }
+        .App .main .experiences-container .experiences .experience {
+          margin: 40px 0 0 10px; }
+          .App .main .experiences-container .experiences .experience h4 {
+            margin: 5px 0 0 0; }
+          .App .main .experiences-container .experiences .experience h5 {
+            margin: 10px 0 0 0; }
+          .App .main .experiences-container .experiences .experience p {
+            margin: 10px 0; }
+          .App .main .experiences-container .experiences .experience ul {
+            padding: 0 0 0 15px; }
+          .App .main .experiences-container .experiences .experience .techs-container {
+            grid-template-columns: auto;
+            grid-template-rows: 10% auto;
+            grid-template-areas: "techs-title"  "tech"; }
+            .App .main .experiences-container .experiences .experience .techs-container .techs {
+              display: grid;
+              grid-area: techs;
+              grid-template-columns: 50% 50%;
+              grid-template-rows: auto;
+              grid-template-areas: "techs-one techs-two"; }
+              .App .main .experiences-container .experiences .experience .techs-container .techs ul {
+                margin: 0;
+                padding: 0 0 0 15px;
+                list-style: none; }
+              .App .main .experiences-container .experiences .experience .techs-container .techs .techs-one {
+                grid-area: techs-one; }
+              .App .main .experiences-container .experiences .experience .techs-container .techs .techs-two {
+                grid-area: techs-two; }
+    .App .main .education-container {
+      display: grid;
+      grid-area: education-container;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "education-title" "education";
+      margin: 30px 0 0; }
+      .App .main .education-container .education-title {
+        grid-area: education-title; }
+      .App .main .education-container .education {
+        grid-area: education;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 10px 0 0 10px; }
+    .App .main .misc-container {
+      grid-area: misc-container;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "misc-title" "misc";
+      margin: 30px 0 0; }
+      .App .main .misc-container .misc-title {
+        grid-area: misc-title; }
+      .App .main .misc-container .misc {
+        grid-area: misc; }
+        .App .main .misc-container .misc ul {
+          padding: 0 0 0 15px;
+          margin: 0; }
+          .App .main .misc-container .misc ul li {
+            margin: 10px 0; }
+  .App .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: auto;
+    grid-template-areas: ". footer-name ." ". footer-email ." ". footer-phone .";
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 10px 0;
+    background-color: rgba(15, 15, 15, 0.9); }
+    .App .footer a {
+      color: #c59c67;
+      border-bottom: 2px solid;
+      border-color: transparent;
+      transition: all .5s;
+      text-decoration: none; }
+    .App .footer a:hover {
+      color: #dac09e;
+      border-color: #dac09e; }
+    .App .footer a:focus {
+      color: #dac09e;
+      border-color: #dac09e; }
+    .App .footer h5 {
+      display: flex;
+      margin: 5px auto;
+      justify-content: center;
+      color: #c59c67; }
+    .App .footer .footer-name {
+      grid-area: footer-name; }
+    .App .footer .footer-email {
+      grid-area: footer-email; }
+    .App .footer .footer-phone {
+      grid-area: footer-phone; }
+
+/* Draw Start */
+#canvas {
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  border: 1px solid; }
+
+.drawDiv {
+  display: block; }
+
+.drawTitle {
+  margin: 0 0 2%;
+  padding: 2% 0; }
+
+.drawMenuContainer {
+  display: block;
+  margin: 0 auto;
+  width: 600px; }
+
+/* Draw End */
+@media (min-width: 768px) {
+  .App h1 {
+    font-size: 2.5em; }
+  .App h2 {
+    font-size: 2em; }
+  .App h3 {
+    font-size: 1.5em; }
+  .App h4 {
+    font-size: 1.25em; }
+  .App h5 {
+    font-size: 1em; }
+  .App h6 {
+    font-size: .75em; }
+  .App li, .App p {
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: justify; }
+  .App .hamburger {
+    display: none; }
+  .App .header {
+    grid-template-columns: 10% auto auto 10%; }
+    .App .header .header-nav {
+      grid-area: header-nav;
+      display: flex;
+      justify-self: end; }
+      .App .header .header-nav ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 25px 0; }
+        .App .header .header-nav ul li {
+          padding: 0 5px;
+          font-size: 1.5em;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center; }
+          .App .header .header-nav ul li span {
+            color: #c59c67; }
+  .App .main {
+    grid-template-columns: 10% auto 10%; }
+    .App .main .objective-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "objective-title . objective"; }
+      .App .main .objective-container .objective {
+        margin: 0; }
+    .App .main .experiences-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "experiences-title . experiences"; }
+      .App .main .experiences-container .experiences .experience:first-child {
+        margin: 0; }
+      .App .main .experiences-container .experiences .experience {
+        margin: 40px 0 0; }
+        .App .main .experiences-container .experiences .experience .techs-container {
+          display: grid;
+          grid-template-columns: 175px auto auto;
+          grid-template-rows: auto;
+          grid-template-areas: "techs-title techs-one techs-two"; }
+    .App .main .education-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "education-title . education"; }
+      .App .main .education-container .education {
+        margin: 0; }
+    .App .main .misc-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "misc-title . misc"; }
+      .App .main .misc-container .misc {
+        margin: 0; }
+        .App .main .misc-container .misc ul {
+          padding: 0 0 0 15px;
+          margin: 0; } }
+
+@media (min-width: 996px) {
+  .App .hamburger {
+    display: none; }
+  .App .main {
+    grid-template-columns: 15% auto 15%; }
+    .App .main .objective-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "objective-title . objective"; }
+      .App .main .objective-container .objective {
+        margin: 0; }
+    .App .main .experiences-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "experiences-title . experiences"; }
+      .App .main .experiences-container .experiences .experience:first-child {
+        margin: 0; }
+      .App .main .experiences-container .experiences .experience {
+        margin: 40px 0 0; }
+        .App .main .experiences-container .experiences .experience .techs-container {
+          display: grid;
+          grid-template-columns: 175px auto auto;
+          grid-template-rows: auto;
+          grid-template-areas: "techs-title techs-one techs-two"; }
+    .App .main .education-container {
+      grid-template-columns: 175px 75px auto;
+      grid-template-rows: auto;
+      grid-template-areas: "education-title . education"; }
+    .App .main .misc-container {
+      grid-template-columns: 175px 75px auto; } }

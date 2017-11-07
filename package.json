@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=mahun:* node ./bin/www",
+    "start": "DEBUG=mahun:* PORT=3001 node ./bin/www",
+    "serve": "npm run build-react && npm run copy-react",
     "start-fs": "NOTES_MODEL=models/notes-fs node ./bin/www",
     "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
     "buildbootstrap": "cp variables.less bower_components/bootstrap/less && cd bower_components/bootstrap && grunt",
@@ -11,7 +12,9 @@
     "server2": "NOTES_MODEL=models/notes-fs PORT=3002 node ./bin/www",
     "start-mongodb": "MONGO_URL=mongodb://localhost:27017/ NOTES_MODEL=models/estimate-mongodb node ./bin/www",
     "server1-mongodb": "MONGO_URL=mongodb://localhost/chap07 NOTES_MODEL=models/notes-mongodb PORT=3001 node ./bin/www",
-    "server2-mongodb": "MONGO_URL=mongodb://localhost/chap07 NOTES_MODEL=models/notes-mongodb PORT=3002 node ./bin/www"
+    "server2-mongodb": "MONGO_URL=mongodb://localhost/chap07 NOTES_MODEL=models/notes-mongodb PORT=3002 node ./bin/www",
+    "build-css": "node-sass-chokidar public/stylesheets/scss -o public/stylesheets/",
+    "watch-css": "npm run build-css && node-sass-chokidar public/stylesheets/scss -o public/stylesheets/ --watch --recursive"
   },
   "postinstall": "./node_modules/bower/bin/bower install",
   "dependencies": {
@@ -25,6 +28,9 @@
     "grunt-cli": "^1.2.0",
     "mongodb": "^2.2.31",
     "morgan": "~1.8.1",
+    "node-sass": "^4.6.0",
+    "node-sass-chokidar": "0.0.3",
+    "sass": "^1.0.0-beta.3",
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
