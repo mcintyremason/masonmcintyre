@@ -332,6 +332,8 @@ body {
           margin: 0; } }
 
 @media (min-width: 996px) {
+  .App li, .App p {
+    text-align: justify; }
   .App .hamburger {
     display: none; }
   .App .main {

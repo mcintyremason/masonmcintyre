@@ -513,6 +513,10 @@ body{
 
 @media(min-width:996px){
   .App{
+    li,p{
+      text-align: justify;
+    }
+
     .hamburger{
       display:none;
     }
