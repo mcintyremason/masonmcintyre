@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start-all": "npm-run-all -p watch-css start",
     "start": "DEBUG=mahun:* node ./bin/www",
     "start-fs": "NOTES_MODEL=models/notes-fs node ./bin/www",
     "bootstrapsetup": "cd bower_components/bootstrap && npm install && npm install grunt-cli ",
@@ -29,6 +30,7 @@
     "morgan": "~1.8.1",
     "node-sass": "^4.6.0",
     "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
     "sass": "^1.0.0-beta.3",
     "serve-favicon": "~2.4.2"
   },

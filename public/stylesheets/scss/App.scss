@@ -63,8 +63,8 @@ body{
   }
   li,p{
     font-size:.9em;
+    font-weight:500;
     line-height: 1.3em;
-    text-align: justify;
   }
   li{
     margin:10px 0;
@@ -116,6 +116,22 @@ body{
       ul{
         display:none;
       }
+
+      .hamburger{
+        /* display: flex; */
+        display:none;
+        font-size: 2em;
+        flex-flow: column nowrap;
+        justify-content: center;
+        border:none;
+      }
+      .hamburger:hover{
+        border:none;
+        cursor:pointer;
+      }
+    }
+    .mobile-nav-container{
+      display:none;
     }    
   }
 
@@ -214,7 +230,7 @@ body{
               ul{
                 margin:0;
                 padding:0 0 0 15px;
-                list-style:none;
+                list-style: none;
               }
               .techs-one{
                 grid-area:techs-one;
@@ -275,7 +291,7 @@ body{
 
         ul{
           padding:0 0 0 15px;
-          margin:0;
+          margin:0 0 0 10px;
           
           li{
             margin:10px 0;
@@ -378,7 +394,6 @@ body{
     li,p{
       font-size:1em;
       line-height: 1.3em;
-      text-align: justify;
     }
 
     .hamburger{
@@ -414,6 +429,10 @@ body{
           }
         }
       }
+
+      .mobileNavContainer{
+        display:none;
+      }
     }
 
     .main{
@@ -445,10 +464,18 @@ body{
 
             .techs-container{
               display:grid;
-              grid-template-columns: 175px auto auto;
-              grid-template-rows: auto;
+              grid-template-columns: auto;
+              grid-template-rows: auto auto;
               grid-template-areas: 
-                "techs-title techs-one techs-two";
+                "techs-title"
+                "techs";
+
+                .techs{
+                  grid-template-columns: auto;
+                  grid-template-rows: auto;
+                  grid-template-areas: 
+                    "techs-one techs-two";
+                }
             }
           }
         }
@@ -519,10 +546,17 @@ body{
 
             .techs-container{
               display:grid;
-              grid-template-columns: 175px auto auto;
+              grid-template-columns: 175px 25px auto;
               grid-template-rows: auto;
               grid-template-areas: 
-                "techs-title techs-one techs-two";
+                "techs-title . techs";
+
+              .techs{
+                grid-template-columns: 5% 200px 200px;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                  ". techs-one techs-two";
+              }
             }
           }
         }

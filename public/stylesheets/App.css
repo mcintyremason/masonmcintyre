@@ -43,8 +43,8 @@ body {
     font-size: .8em; }
   .App li, .App p {
     font-size: .9em;
-    line-height: 1.3em;
-    text-align: justify; }
+    font-weight: 500;
+    line-height: 1.3em; }
   .App li {
     margin: 10px 0; }
   .App .hide {
@@ -80,6 +80,18 @@ body {
       justify-self: end; }
       .App .header .header-nav ul {
         display: none; }
+      .App .header .header-nav .hamburger {
+        /* display: flex; */
+        display: none;
+        font-size: 2em;
+        flex-flow: column nowrap;
+        justify-content: center;
+        border: none; }
+      .App .header .header-nav .hamburger:hover {
+        border: none;
+        cursor: pointer; }
+    .App .header .mobile-nav-container {
+      display: none; }
   .App .main {
     grid-area: main;
     display: grid;
@@ -179,7 +191,7 @@ body {
         grid-area: misc; }
         .App .main .misc-container .misc ul {
           padding: 0 0 0 15px;
-          margin: 0; }
+          margin: 0 0 0 10px; }
           .App .main .misc-container .misc ul li {
             margin: 10px 0; }
   .App .footer {
@@ -252,8 +264,7 @@ body {
     font-size: .75em; }
   .App li, .App p {
     font-size: 1em;
-    line-height: 1.3em;
-    text-align: justify; }
+    line-height: 1.3em; }
   .App .hamburger {
     display: none; }
   .App .header {
@@ -277,6 +288,8 @@ body {
           justify-content: center; }
           .App .header .header-nav ul li span {
             color: #c59c67; }
+    .App .header .mobileNavContainer {
+      display: none; }
   .App .main {
     grid-template-columns: 10% auto 10%; }
     .App .main .objective-container {
@@ -295,9 +308,13 @@ body {
         margin: 40px 0 0; }
         .App .main .experiences-container .experiences .experience .techs-container {
           display: grid;
-          grid-template-columns: 175px auto auto;
-          grid-template-rows: auto;
-          grid-template-areas: "techs-title techs-one techs-two"; }
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          grid-template-areas: "techs-title" "techs"; }
+          .App .main .experiences-container .experiences .experience .techs-container .techs {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: "techs-one techs-two"; }
     .App .main .education-container {
       grid-template-columns: 175px 75px auto;
       grid-template-rows: auto;
@@ -335,9 +352,13 @@ body {
         margin: 40px 0 0; }
         .App .main .experiences-container .experiences .experience .techs-container {
           display: grid;
-          grid-template-columns: 175px auto auto;
+          grid-template-columns: 175px 25px auto;
           grid-template-rows: auto;
-          grid-template-areas: "techs-title techs-one techs-two"; }
+          grid-template-areas: "techs-title . techs"; }
+          .App .main .experiences-container .experiences .experience .techs-container .techs {
+            grid-template-columns: 5% 200px 200px;
+            grid-template-rows: auto;
+            grid-template-areas: ". techs-one techs-two"; }
     .App .main .education-container {
       grid-template-columns: 175px 75px auto;
       grid-template-rows: auto;
