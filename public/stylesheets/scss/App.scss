@@ -306,11 +306,9 @@ body{
     grid-template-columns: 10% auto 10%;
     grid-template-rows: auto;
     grid-template-areas: 
-      ". footer-name ."
       ". footer-email ."
       ". footer-phone .";
 
-    width:100%;
     margin:20px 0 0;
     padding:10px 0;
     background-color:rgba(15, 15, 15, 0.9);
@@ -332,9 +330,10 @@ body{
       border-color: $secondary-color;
     }
     h5{
+      width:100%;
       display:flex;
-      margin:5px auto;
       justify-content: center;
+      margin:5px auto;
       color:$primary-color;
     }
     .footer-name{

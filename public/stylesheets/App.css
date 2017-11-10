@@ -199,8 +199,7 @@ body {
     display: grid;
     grid-template-columns: 10% auto 10%;
     grid-template-rows: auto;
-    grid-template-areas: ". footer-name ." ". footer-email ." ". footer-phone .";
-    width: 100%;
+    grid-template-areas: ". footer-email ." ". footer-phone .";
     margin: 20px 0 0;
     padding: 10px 0;
     background-color: rgba(15, 15, 15, 0.9); }
@@ -217,9 +216,10 @@ body {
       color: #dac09e;
       border-color: #dac09e; }
     .App .footer h5 {
+      width: 100%;
       display: flex;
-      margin: 5px auto;
       justify-content: center;
+      margin: 5px auto;
       color: #c59c67; }
     .App .footer .footer-name {
       grid-area: footer-name; }
@@ -249,7 +249,7 @@ body {
   width: 600px; }
 
 /* Draw End */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .App h1 {
     font-size: 2.5em; }
   .App h2 {
@@ -331,7 +331,7 @@ body {
           padding: 0 0 0 15px;
           margin: 0; } }
 
-@media (min-width: 996px) {
+@media screen and (min-width: 996px) {
   .App li, .App p {
     text-align: justify; }
   .App .hamburger {
