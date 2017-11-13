@@ -15,8 +15,18 @@ router.get('/draw', function(req, res, next) {
   res.render('projects/draw', {
     title: 'Draw',
     styles: ``,
-    scripts: `<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-              <script type="text/javascript" src="/javascripts/draw.js"></script>`,
+    scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+              <script type="text/javascript" src="/javascripts/draw/draw.js"></script>`,
+    docreate: 'create',
+   });
+});
+
+router.get('/literacy-game', function(req, res, next) {
+  res.render('projects/literacy-game', {
+    title: 'Literacy Game',
+    styles: `<link type="text/css" rel="stylesheet" href="/stylesheets/literacy-game.css></link>`,
+    scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+              <script type="text/javascript" src="/javascripts/literacy-game/game.js"></script>`,
     docreate: 'create',
    });
 });

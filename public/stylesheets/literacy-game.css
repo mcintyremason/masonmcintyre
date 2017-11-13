@@ -1,0 +1,42 @@
+#canvas {
+  position: absolute;
+  height: 25%;
+  width: 40%;
+  left: 32%;
+  }
+  #button1 {
+  display: table-cell;
+  background-color: '#FF0000';
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px;
+  }
+  #button2 {
+  display: table-cell;
+  background-color: '#FF0000';
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px;
+  }
+  #button3 {
+  display: table-cell;
+  background-color: '#FF0000';
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px;
+  }
+  #button4 {
+  display: table-cell;
+  background-color: '#FF0000';
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px;
+  }
