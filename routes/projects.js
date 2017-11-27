@@ -26,7 +26,7 @@ router.get('/literacy-game', function(req, res, next) {
     title: 'Literacy Game',
     styles: `<link type="text/css" rel="stylesheet" href="/stylesheets/literacy-game.css></link>`,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-              <script type="text/javascript" src="/javascripts/literacy-game/Game.js"></script>`,
+              <script type="text/javascript" src="/javascripts/literacy-game/run.js"></script>`,
     docreate: 'create',
    });
 });
