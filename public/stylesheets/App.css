@@ -197,9 +197,9 @@ body {
   .App .footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: auto 60% auto;
     grid-template-rows: auto;
-    grid-template-areas: ". footer-email ." ". footer-phone .";
+    grid-template-areas: ". footer-icons .";
     margin: 20px 0 0;
     padding: 10px 0;
     background-color: rgba(15, 15, 15, 0.9); }
@@ -215,18 +215,15 @@ body {
     .App .footer a:focus {
       color: #dac09e;
       border-color: #dac09e; }
-    .App .footer h5 {
-      width: 100%;
+    .App .footer .footer-icons {
+      grid-area: footer-icons;
       display: flex;
-      justify-content: center;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+    .App .footer h4 {
+      display: flex;
       margin: 5px auto;
       color: #c59c67; }
-    .App .footer .footer-name {
-      grid-area: footer-name; }
-    .App .footer .footer-email {
-      grid-area: footer-email; }
-    .App .footer .footer-phone {
-      grid-area: footer-phone; }
 
 /* Draw Start */
 .canvas-container {
@@ -332,7 +329,9 @@ body {
         margin: 0; }
         .App .main .misc-container .misc ul {
           padding: 0 0 0 15px;
-          margin: 0; } }
+          margin: 0; }
+  .App .footer {
+    grid-template-columns: auto 40% auto; } }
 
 @media screen and (min-width: 996px) {
   .App li, .App p {
@@ -372,4 +371,6 @@ body {
       grid-template-rows: auto;
       grid-template-areas: "education-title . education"; }
     .App .main .misc-container {
-      grid-template-columns: 175px 75px auto; } }
+      grid-template-columns: 175px 75px auto; }
+  .App .footer {
+    grid-template-columns: auto 25% auto; } }

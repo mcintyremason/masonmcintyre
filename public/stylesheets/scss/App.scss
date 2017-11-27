@@ -303,11 +303,10 @@ body{
   .footer{
     grid-area: footer;
     display:grid;
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: auto 60% auto;
     grid-template-rows: auto;
     grid-template-areas: 
-      ". footer-email ."
-      ". footer-phone .";
+      ". footer-icons .";
 
     margin:20px 0 0;
     padding:10px 0;
@@ -329,22 +328,19 @@ body{
       color:$secondary-color;
       border-color: $secondary-color;
     }
-    h5{
-      width:100%;
+    .footer-icons{
+      grid-area:footer-icons;
+
       display:flex;
-      justify-content: center;
+      flex-flow:row nowrap;
+      justify-content: space-between;
+    }
+    h4{
+      display:flex;
       margin:5px auto;
       color:$primary-color;
     }
-    .footer-name{
-      grid-area:footer-name;
-    }
-    .footer-email{
-      grid-area:footer-email;
-    }
-    .footer-phone{
-      grid-area:footer-phone;
-    }
+
   }
 }
 
@@ -510,6 +506,9 @@ body{
         }
       }
     }
+    .footer{
+      grid-template-columns: auto 40% auto;
+    }  
   }
 }
 
@@ -584,5 +583,9 @@ body{
         grid-template-columns: 175px 75px auto;
       }
     }
+
+    .footer{
+      grid-template-columns: auto 25% auto;
+    }  
   }
 }
