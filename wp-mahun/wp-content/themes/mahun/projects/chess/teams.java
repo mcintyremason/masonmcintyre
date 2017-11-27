@@ -4,7 +4,6 @@
 
 import java.util.*;
 
-
 class teams extends piece
 {
   static ArrayList<piece> bteam;

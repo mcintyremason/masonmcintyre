@@ -229,12 +229,15 @@ body {
       grid-area: footer-phone; }
 
 /* Draw Start */
-#canvas {
-  width: 600px;
-  height: 600px;
-  display: block;
-  margin: auto;
-  border: 1px solid; }
+.canvas-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px 0 0; }
+
+.canvas {
+  min-height: 220px;
+  width: 90%; }
 
 .drawDiv {
   display: block; }
@@ -334,6 +337,9 @@ body {
 @media screen and (min-width: 996px) {
   .App li, .App p {
     text-align: justify; }
+  .App .canvas {
+    min-height: 280px;
+    width: 75%; }
   .App .hamburger {
     display: none; }
   .App .main {
