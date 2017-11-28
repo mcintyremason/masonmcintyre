@@ -309,7 +309,7 @@ body{
       ". footer-icons .";
 
     margin:20px 0 0;
-    padding:10px 0;
+    padding:20px 0;
     background-color:rgba(15, 15, 15, 0.9);
 
 
@@ -345,15 +345,49 @@ body{
 }
 
 /* Draw Start */
-.canvas-container{
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content:center;
-  margin:20px 0 0;
+.dark{
+  background: rgba(15, 15, 15, 1);
+
+  .App{
+    background: rgba(15, 15, 15, 1);
+
+    .seniorProject{
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:center;
+
+      .titleContainer{
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:center;
+        margin: 20px  0 0;
+
+        .title{
+          color:$primary-color;
+          display:flex;
+          flex-flow:row nowrap;
+          justify-content:center;
+        }
+      }
+
+      .canvasContainer{
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:center;
+        margin:20px 0 0;
+      }
+      .canvas {
+        width: 90%;
+        max-width:920px;
+        min-height: 220px;
+      }
+    }
+  }
 }
-.canvas {
-  min-height: 220px;
-  width: 90%;
+.drawCanvas{
+  border:1px solid black;
+  display: block;
+  margin: auto;
 }
 .drawDiv{
   display:block;
@@ -585,7 +619,7 @@ body{
     }
 
     .footer{
-      grid-template-columns: auto 25% auto;
+      grid-template-columns: auto 20% auto;
     }  
   }
 }

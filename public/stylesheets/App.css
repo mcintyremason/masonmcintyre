@@ -201,7 +201,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas: ". footer-icons .";
     margin: 20px 0 0;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: rgba(15, 15, 15, 0.9); }
     .App .footer a {
       color: #c59c67;
@@ -226,15 +226,38 @@ body {
       color: #c59c67; }
 
 /* Draw Start */
-.canvas-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin: 20px 0 0; }
+.dark {
+  background: #0f0f0f; }
+  .dark .App {
+    background: #0f0f0f; }
+    .dark .App .seniorProject {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center; }
+      .dark .App .seniorProject .titleContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 20px  0 0; }
+        .dark .App .seniorProject .titleContainer .title {
+          color: #c59c67;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center; }
+      .dark .App .seniorProject .canvasContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 20px 0 0; }
+      .dark .App .seniorProject .canvas {
+        width: 90%;
+        max-width: 920px;
+        min-height: 220px; }
 
-.canvas {
-  min-height: 220px;
-  width: 90%; }
+.drawCanvas {
+  border: 1px solid black;
+  display: block;
+  margin: auto; }
 
 .drawDiv {
   display: block; }
@@ -373,4 +396,4 @@ body {
     .App .main .misc-container {
       grid-template-columns: 175px 75px auto; }
   .App .footer {
-    grid-template-columns: auto 25% auto; } }
+    grid-template-columns: auto 20% auto; } }
