@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
     title: 'Mason McIntyre',
     styles: '',
     scripts: '',
-    docreate: 'create',
    });
 });
 
@@ -17,17 +16,15 @@ router.get('/draw', function(req, res, next) {
     styles: ``,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
               <script type="text/javascript" src="/javascripts/projects/draw/draw.js"></script>`,
-    docreate: 'create',
    });
 });
 
 router.get('/senior-project', function(req, res, next) {
   res.render('projects/senior-project', {
     title: 'Senior Project',
-    styles: `<link type="text/css" rel="stylesheet" href="/stylesheets/senior-project.css></link>`,
+    styles: `<link type="text/css" rel="stylesheet" href="/stylesheets/senior-project.css>`,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
               <script type="text/javascript" src="/javascripts/projects/senior-project/run.js"></script>`,
-    refresh: true,
    });
 });
 
