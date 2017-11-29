@@ -22,7 +22,7 @@ router.get('/draw', function(req, res, next) {
 router.get('/senior-project', function(req, res, next) {
   res.render('projects/senior-project', {
     title: 'Senior Project',
-    styles: `<link type="text/css" rel="stylesheet" href="/stylesheets/senior-project.css">`,
+    styles: ``,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
               <script type="text/javascript" src="/javascripts/projects/senior-project/run.js"></script>`,
    });
