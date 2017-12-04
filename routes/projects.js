@@ -15,7 +15,7 @@ router.get('/draw', function(req, res, next) {
     title: 'Draw',
     styles: ``,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-              <script type="text/javascript" src="/javascripts/projects/draw/draw.js"></script>`,
+              <script type="text/javascript" src="/js/projects/draw/draw.js"></script>`,
    });
 });
 
@@ -24,7 +24,7 @@ router.get('/senior-project', function(req, res, next) {
     title: 'Senior Project',
     styles: ``,
     scripts: `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-              <script type="text/javascript" src="/javascripts/projects/senior-project/run.js"></script>`,
+              <script type="text/javascript" src="/js/projects/senior-project/run.js"></script>`,
    });
 });
 

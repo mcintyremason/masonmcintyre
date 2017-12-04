@@ -97,31 +97,7 @@ body {
     display: grid;
     grid-template-columns: 5% auto 5%;
     grid-template-rows: auto;
-    grid-template-areas: ". experiences-container ." ". education-container ." ". misc-container .";
-    /*
-    .objective-container{
-      grid-area:objective-container;
-      display:grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: 
-        "objective-title"
-        "objective"
-      ;
-
-      margin:30px 0 0;
-
-      .objective-title{
-        grid-area: objective-title;
-      }
-
-      .objective{
-        grid-area:objective;
-        justify-self: start;
-        margin:10px 0 0 10px;
-      }
-    }
-    */ }
+    grid-template-areas: ". experiences-container ." ". education-container ." ". misc-container ."; }
     .App .main .experiences-container {
       grid-area: experiences-container;
       display: grid;
@@ -224,6 +200,23 @@ body {
       display: flex;
       margin: 5px auto;
       color: #c59c67; }
+
+.App.index .main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: auto;
+  grid-template-areas: ". img-container ."; }
+  .App.index .main .img-container {
+    grid-area: img-container;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 500px; }
+    .App.index .main .img-container img {
+      width: 500px;
+      height: 375px;
+      transform: rotate(-90deg) translate(-75px); }
 
 /* Draw Start */
 .dark {

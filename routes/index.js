@@ -7,7 +7,14 @@ router.get('/', function(req, res, next) {
     title: 'Mason McIntyre',
     styles: '',
     scripts: '',
-    docreate: 'create',
+   });
+});
+
+router.get('/resume', function(req, res, next) {
+  res.render('root/resume', {
+    title: 'Mason McIntyre',
+    styles: '',
+    scripts: '',
    });
 });
 
