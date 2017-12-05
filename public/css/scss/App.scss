@@ -321,7 +321,7 @@ body{
   .main{
     grid-area:main;
     display:grid;
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 10% auto 10%;
     grid-template-rows: auto;
     grid-template-areas: 
       ". img-container ."
@@ -333,12 +333,9 @@ body{
       display:flex;
       flex-flow: row nowrap;
       justify-content: center;
-      height:500px;
       
       img{
-        width:500px;
-        height:375px;
-        transform:rotate(-90deg) translate(-75px);
+        width:100%;
       }
     }
 
@@ -408,6 +405,13 @@ body{
   width:600px;
 }
 /* Draw End */
+@media screen and (min-width: 375px){
+  .App.index{
+    .main{
+      grid-template-columns: 15% auto 15%;
+    }
+  }
+}
 
 @media screen and (min-width: 768px){
   .App{
@@ -550,6 +554,12 @@ body{
       grid-template-columns: auto 40% auto;
     }  
   }
+
+  .App.index{
+    .main{
+      grid-template-columns: auto 500px auto;
+    }
+  }
 }
 
 @media screen and (min-width:996px){
@@ -627,5 +637,11 @@ body{
     .footer{
       grid-template-columns: auto 20% auto;
     }  
+  }
+
+  .App.index{
+    .main{
+      grid-template-columns: auto 500px auto;
+    }
   }
 }

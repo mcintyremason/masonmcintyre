@@ -204,19 +204,16 @@ body {
 .App.index .main {
   grid-area: main;
   display: grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: 10% auto 10%;
   grid-template-rows: auto;
   grid-template-areas: ". img-container ." ". about-container ."; }
   .App.index .main .img-container {
     grid-area: img-container;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    height: 500px; }
+    justify-content: center; }
     .App.index .main .img-container img {
-      width: 500px;
-      height: 375px;
-      transform: rotate(-90deg) translate(-75px); }
+      width: 100%; }
   .App.index .main .about-container {
     grid-area: about-container;
     color: #c59c67;
@@ -269,6 +266,10 @@ body {
   width: 600px; }
 
 /* Draw End */
+@media screen and (min-width: 375px) {
+  .App.index .main {
+    grid-template-columns: 15% auto 15%; } }
+
 @media screen and (min-width: 768px) {
   .App h1 {
     font-size: 2.5em; }
@@ -351,7 +352,9 @@ body {
           padding: 0 0 0 15px;
           margin: 0; }
   .App .footer {
-    grid-template-columns: auto 40% auto; } }
+    grid-template-columns: auto 40% auto; }
+  .App.index .main {
+    grid-template-columns: auto 500px auto; } }
 
 @media screen and (min-width: 996px) {
   .App li, .App p {
@@ -393,4 +396,6 @@ body {
     .App .main .misc-container {
       grid-template-columns: 175px 75px auto; }
   .App .footer {
-    grid-template-columns: auto 20% auto; } }
+    grid-template-columns: auto 20% auto; }
+  .App.index .main {
+    grid-template-columns: auto 500px auto; } }
