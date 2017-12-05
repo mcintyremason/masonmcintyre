@@ -11,13 +11,14 @@ body {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "header" "main" "footer";
-  /*
   background-color: #ffffff;
-  */
+  /*
   background: linear-gradient(225deg, white, #c59c67);
+  */
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
-  margin: 0; }
+  margin: 0;
+  transition: 1s all; }
   .App a {
     color: #c59c67;
     border-color: #c59c67;
@@ -218,7 +219,8 @@ body {
     margin: 20px 0 0; }
     .App.index .main .img-container img {
       width: initial;
-      max-height: 350px; }
+      max-height: 350px;
+      box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5); }
   .App.index .main .about-container {
     grid-area: about-container;
     color: #000000;
@@ -274,9 +276,9 @@ body {
 @media screen and (min-width: 375px) {
   .App.index .main {
     grid-template-columns: 15% auto 15%; }
-    .App.index .main img {
+    .App.index .main .img-container img {
       width: 100%;
-      max-height: auto; } }
+      max-height: 100%; } }
 
 @media screen and (min-width: 768px) {
   .App h1 {
@@ -365,7 +367,7 @@ body {
   .App.index .main {
     grid-template-columns: auto 500px auto; }
     .App.index .main .img-container img {
-      max-height: 625px; }
+      max-height: 100%; }
     .App.index .main .about-container {
       margin: 40px 0 0; } }
 
@@ -414,8 +416,6 @@ body {
     grid-template-columns: auto 500px 5% 40% auto;
     grid-template-rows: auto;
     grid-template-areas: ". img-container . about-container ."; }
-    .App.index .main .img-container img {
-      max-height: 625px; }
     .App.index .main .about-container {
       display: flex;
       flex-flow: column nowrap;

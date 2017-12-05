@@ -20,13 +20,15 @@ body{
     "main"
     "footer";
 
-  /*
+  
   background-color: #ffffff;
-  */
+  /*
   background: linear-gradient(225deg, white, #c59c67);
+  */
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
   margin:0;
+  transition: 1s all;
   
   a{
     color: $primary-color;
@@ -341,6 +343,7 @@ body{
       img{
         width:initial;
         max-height:350px;
+        box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
       }
     }
 
@@ -415,9 +418,11 @@ body{
     .main{
       grid-template-columns: 15% auto 15%;
 
-      img{
-        width:100%;
-        max-height:auto;
+      .img-container{
+        img{
+          width:100%;
+          max-height:100%;
+        }
       }
     }
   }
@@ -572,7 +577,7 @@ body{
 
       .img-container{
         img{
-          max-height:625px;
+          max-height:100%;
         }
       }
 
@@ -666,12 +671,6 @@ body{
       grid-template-rows: auto;
       grid-template-areas: 
         ". img-container . about-container .";
-
-      .img-container{
-        img{
-          max-height:625px;
-        }
-      }
 
       .about-container{
         display:flex;
