@@ -176,7 +176,6 @@ body {
     grid-template-columns: auto 60% auto;
     grid-template-rows: auto;
     grid-template-areas: ". footer-icons .";
-    margin: 20px 0 0;
     padding: 20px 0;
     background-color: rgba(15, 15, 15, 0.9); }
     .App .footer a {
@@ -218,7 +217,7 @@ body {
   .App.index .main .about-container {
     grid-area: about-container;
     color: #c59c67;
-    margin: 50px 0 0; }
+    margin: 25px 0 0; }
 
 /* Draw Start */
 .dark {
@@ -353,7 +352,8 @@ body {
           padding: 0 0 0 15px;
           margin: 0; }
   .App .footer {
-    grid-template-columns: auto 40% auto; }
+    grid-template-columns: auto 40% auto;
+    margin: 20px 0 0; }
   .App.index .main {
     grid-template-columns: auto 500px auto; }
     .App.index .main .img-container img {

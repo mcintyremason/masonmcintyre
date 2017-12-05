@@ -281,7 +281,6 @@ body{
     grid-template-areas: 
       ". footer-icons .";
 
-    margin:20px 0 0;
     padding:20px 0;
     background-color:rgba(15, 15, 15, 0.9);
 
@@ -343,7 +342,7 @@ body{
     .about-container{
       grid-area:about-container;
       color:$primary-color;
-      margin:50px 0 0;
+      margin:25px 0 0;
     }
   }
 }
@@ -553,6 +552,7 @@ body{
     }
     .footer{
       grid-template-columns: auto 40% auto;
+      margin:20px 0 0;
     }  
   }
 
