@@ -4,7 +4,7 @@
   Compliment Blue: #6790C5
 */
 
-$primary-color: #c59c67;
+$primary-color:#c59c67;
 $secondary-color: #dac09e;
 
 body{
@@ -321,10 +321,11 @@ body{
   .main{
     grid-area:main;
     display:grid;
-    grid-template-columns: 5% auto 5%;
+    grid-template-columns: 25% auto 25%;
     grid-template-rows: auto;
     grid-template-areas: 
-      ". img-container .";
+      ". img-container ."
+      ". about-container .";
 
 
     .img-container{
@@ -339,6 +340,12 @@ body{
         height:375px;
         transform:rotate(-90deg) translate(-75px);
       }
+    }
+
+    .about-container{
+      grid-area:about-container;
+      color:$primary-color;
+      margin:50px 0 0;
     }
   }
 }

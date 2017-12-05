@@ -5,16 +5,16 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('root/index', {
     title: 'Mason McIntyre',
-    styles: '',
-    scripts: '',
+    styles: ``,
+    scripts: ``,
    });
 });
 
 router.get('/resume', function(req, res, next) {
   res.render('root/resume', {
     title: 'Mason McIntyre',
-    styles: '',
-    scripts: '',
+    styles: ``,
+    scripts: ``,
    });
 });
 
