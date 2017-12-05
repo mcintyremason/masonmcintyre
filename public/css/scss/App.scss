@@ -421,7 +421,7 @@ body{
       .img-container{
         img{
           width:100%;
-          max-height:100%;
+          max-height:625px;
         }
       }
     }
@@ -574,12 +574,6 @@ body{
   .App.index{
     .main{
       grid-template-columns: auto 500px auto;
-
-      .img-container{
-        img{
-          max-height:100%;
-        }
-      }
 
       .about-container{
         margin:40px 0 0;
