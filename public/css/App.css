@@ -357,7 +357,9 @@ body {
   .App.index .main {
     grid-template-columns: auto 500px auto; }
     .App.index .main .img-container img {
-      max-height: 625px; } }
+      max-height: 625px; }
+    .App.index .main .about-container {
+      margin: 40px 0 0; } }
 
 @media screen and (min-width: 996px) {
   .App li, .App p {
