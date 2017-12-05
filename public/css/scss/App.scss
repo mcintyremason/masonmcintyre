@@ -336,7 +336,8 @@ body{
       margin:20px 0 0;
       
       img{
-        width:100%;
+        width:initial;
+        max-height:350px;
       }
     }
 
@@ -410,6 +411,11 @@ body{
   .App.index{
     .main{
       grid-template-columns: 15% auto 15%;
+
+      img{
+        width:100%;
+        max-height:auto;
+      }
     }
   }
 }
