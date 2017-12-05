@@ -213,7 +213,8 @@ body {
     flex-flow: row nowrap;
     justify-content: center; }
     .App.index .main .img-container img {
-      width: 100%; }
+      width: 100%;
+      max-height: 300px; }
   .App.index .main .about-container {
     grid-area: about-container;
     color: #c59c67;
@@ -354,7 +355,9 @@ body {
   .App .footer {
     grid-template-columns: auto 40% auto; }
   .App.index .main {
-    grid-template-columns: auto 500px auto; } }
+    grid-template-columns: auto 500px auto; }
+    .App.index .main .img-container img {
+      max-height: 625px; } }
 
 @media screen and (min-width: 996px) {
   .App li, .App p {
@@ -398,4 +401,6 @@ body {
   .App .footer {
     grid-template-columns: auto 20% auto; }
   .App.index .main {
-    grid-template-columns: auto 500px auto; } }
+    grid-template-columns: auto 500px auto; }
+    .App.index .main .img-container img {
+      max-height: 625px; } }
