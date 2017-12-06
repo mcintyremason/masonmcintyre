@@ -98,7 +98,7 @@ body {
         height: 0;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: left;
+        justify-content: flex-end;
         transition: .5s all;
         overflow: hidden; }
         .App .header-container .header .mobile-nav-container ul {
