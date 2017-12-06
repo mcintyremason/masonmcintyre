@@ -16,7 +16,7 @@ body{
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: 
-    "header"
+    "header-container"
     "main"
     "footer";
 
@@ -79,65 +79,80 @@ body{
     display:none;
   }
 
-  .header{
+  .header-container{
     width:100%;
-    max-height: 100px;
-    grid-area:header;
+    // max-height: 100px;
+    grid-area:header-container;
     background-color:rgba(15, 15, 15, 0.9);
     transition: all .5s;
 
-    display: grid;
-    grid-template-columns: 5% auto auto 5%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      ". header-name header-nav .";
-    
-      a{
-        color: $primary-color;
-        border-bottom: 2px solid;
-        border-color: transparent;
-        transition: all .5s;
-        text-decoration: none;
-      }
-      a:hover{
+    .header{
+      display: grid;
+      grid-template-columns: 5% auto 15% 5%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        ". header-name header-nav ."
+        ". mobile-header-nav mobile-header-nav .";
+      margin:25px 0;
+      
+        a{
+          color: $primary-color;
+          border-bottom: 2px solid;
+          border-color: transparent;
+          transition: all .5s;
+          text-decoration: none;
+        }
+        a:hover{
+            color: $secondary-color;
+            border-color: $secondary-color;
+        }
+        a:focus{
           color: $secondary-color;
           border-color: $secondary-color;
       }
-      a:focus{
-        color: $secondary-color;
-        border-color: $secondary-color;
-    }
-    
-    .header-name{
-      grid-area:header-name;
-      margin:25px 0;
-    }
-
-    .header-nav{
-      grid-area:header-nav;
-      display:flex;
-      justify-self: end;
-
-      ul{
-        display:none;
+      
+      .header-name{
+        grid-area:header-name;
       }
 
-      .hamburger{
-        /* display: flex; */
-        display:none;
-        font-size: 2em;
-        flex-flow: column nowrap;
-        justify-content: center;
-        border:none;
+      .header-nav{
+        grid-area:header-nav;
+        display:flex;
+        justify-self: end;
+
+        ul{
+          display:none;
+        }
+
+        .hamburger{
+          display: flex;
+          // display:none;
+          font-size: 2em;
+          flex-flow: column nowrap;
+          justify-content: center;
+          border:none;
+        }
+        .hamburger:hover{
+          border: none;
+          cursor:pointer;
+        }
       }
-      .hamburger:hover{
-        border:none;
-        cursor:pointer;
-      }
-    }
-    .mobile-nav-container{
-      display:none;
-    }    
+      .mobile-nav-container{
+        grid-area:mobile-header-nav;
+        height:0;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+        transition: .5s all;
+        overflow: hidden;
+
+        ul{
+          list-style:none;
+          padding:0;
+          margin:5px 0 0;
+        }
+      }  
+    }  
   }
 
   .main{
@@ -454,43 +469,47 @@ body{
       font-size:1em;
       line-height: 1.3em;
     }
+    
+    .header-container{
 
-    .hamburger{
-      display:none;
-    }
+      .header{
+        grid-template-columns: 10% auto auto 10%;
 
-    .header{
-      grid-template-columns: 10% auto auto 10%;
-
-      .header-nav{
-        grid-area:header-nav;
-        display:flex;
-        justify-self: end;
-  
-        ul{
-          list-style: none;
+        .header-nav{
+          grid-area:header-nav;
           display:flex;
-          flex-flow:row nowrap;
-          justify-content:space-around;
-          padding:0;
-          margin:25px 0;
-  
-          li{
-            padding:0 5px;
-            font-size:1.5em;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-  
-            span{
-              color:$primary-color;
+          justify-self: end;
+    
+          ul{
+            list-style: none;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            padding:0;
+            margin:25px 0;
+    
+            li{
+              padding:0 5px;
+              font-size:1.5em;
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: center;
+    
+              span{
+                color:$primary-color;
+              }
             }
           }
+          
+          .hamburger{
+            display:none;
+          }
         }
-      }
-
-      .mobileNavContainer{
-        display:none;
+        
+        .mobile-nav-container{
+          height:0;
+          display:none;
+        }
       }
     }
 
