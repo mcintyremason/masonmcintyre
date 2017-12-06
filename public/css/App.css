@@ -98,7 +98,7 @@ body {
         height: 0;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: right;
+        justify-content: left;
         transition: .5s all;
         overflow: hidden; }
         .App .header-container .header .mobile-nav-container ul {
@@ -307,32 +307,34 @@ body {
   .App li, .App p {
     font-size: 1em;
     line-height: 1.3em; }
-  .App .header-container .header {
-    grid-template-columns: 10% auto auto 10%; }
-    .App .header-container .header .header-nav {
-      grid-area: header-nav;
-      display: flex;
-      justify-self: end; }
-      .App .header-container .header .header-nav ul {
-        list-style: none;
+  .App .header-container {
+    max-height: 100px; }
+    .App .header-container .header {
+      grid-template-columns: 10% auto auto 10%; }
+      .App .header-container .header .header-nav {
+        grid-area: header-nav;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        padding: 0;
-        margin: 25px 0; }
-        .App .header-container .header .header-nav ul li {
-          padding: 0 5px;
-          font-size: 1.5em;
+        justify-self: end; }
+        .App .header-container .header .header-nav ul {
+          list-style: none;
           display: flex;
-          flex-flow: column nowrap;
-          justify-content: center; }
-          .App .header-container .header .header-nav ul li span {
-            color: #c59c67; }
-      .App .header-container .header .header-nav .hamburger {
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          padding: 0;
+          margin: 0; }
+          .App .header-container .header .header-nav ul li {
+            padding: 0 5px;
+            font-size: 1.5em;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center; }
+            .App .header-container .header .header-nav ul li span {
+              color: #c59c67; }
+        .App .header-container .header .header-nav .hamburger {
+          display: none; }
+      .App .header-container .header .mobile-nav-container {
+        height: 0;
         display: none; }
-    .App .header-container .header .mobile-nav-container {
-      height: 0;
-      display: none; }
   .App .main {
     grid-template-columns: 10% auto 10%; }
     .App .main .objective-container {

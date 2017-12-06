@@ -142,7 +142,7 @@ body{
         height:0;
         display:flex;
         flex-flow: row nowrap;
-        justify-content: right;
+        justify-content: left;
         transition: .5s all;
         overflow: hidden;
 
@@ -471,6 +471,7 @@ body{
     }
     
     .header-container{
+      max-height: 100px;
 
       .header{
         grid-template-columns: 10% auto auto 10%;
@@ -486,7 +487,7 @@ body{
             flex-flow:row nowrap;
             justify-content:space-around;
             padding:0;
-            margin:25px 0;
+            margin:0;
     
             li{
               padding:0 5px;
