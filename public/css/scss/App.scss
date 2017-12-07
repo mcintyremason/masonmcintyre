@@ -117,7 +117,7 @@ body{
       .header-nav{
         grid-area:header-nav;
         display:flex;
-        justify-self: end;
+        justify-self: center;
 
         ul{
           display:none;
@@ -141,14 +141,24 @@ body{
         height:0;
         display:flex;
         flex-flow: row nowrap;
-        justify-content: flex-end;
+        justify-content: center;
         transition: .5s all;
         overflow: hidden;
+        margin:20px 0 0;
 
         ul{
           list-style:none;
           padding:0;
-          margin:5px 0 0;
+          margin:0;
+
+          li{
+            display:inline-block;
+            margin:0;
+
+            span{
+              color:$primary-color;
+            }
+          }
         }
       }  
     }  

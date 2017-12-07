@@ -5,7 +5,7 @@ function registerEventListeners(){
     var mobileNavContainer = document.getElementById('mobile-nav-container');
     console.log(parseInt(mobileNavContainer.style.height));
     if(parseInt(mobileNavContainer.style.height == 0) || !parseInt(mobileNavContainer.style.height))
-      mobileNavContainer.style.height = '70px';
+      mobileNavContainer.style.height = '25px';
     else
       mobileNavContainer.style.height = '0px';
   })
