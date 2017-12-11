@@ -22,7 +22,7 @@ body {
   .App a {
     color: #c59c67;
     border-color: #c59c67;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     transition: all .5s;
     text-decoration: none; }
   .App a:hover {
@@ -66,7 +66,7 @@ body {
       margin: 20px 0; }
       .App .header-container .header a {
         color: #c59c67;
-        border-bottom: 2px solid;
+        border-bottom: 3px solid;
         border-color: transparent;
         transition: all .5s;
         text-decoration: none; }
@@ -199,7 +199,7 @@ body {
     background-color: rgba(15, 15, 15, 0.9); }
     .App .footer a {
       color: #c59c67;
-      border-bottom: 2px solid;
+      border-bottom: 3px solid;
       border-color: transparent;
       transition: all .5s;
       text-decoration: none; }
@@ -239,6 +239,20 @@ body {
     grid-area: about-container;
     color: #000000;
     margin: 25px 0 0; }
+
+.App.projects .main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: auto;
+  grid-template-areas: ". projects-container ."; }
+  .App.projects .main .projects-container {
+    grid-area: projects-container;
+    margin: 20px 0 0; }
+    .App.projects .main .projects-container .project:first-child {
+      margin: 0; }
+    .App.projects .main .projects-container .project {
+      margin: 10px 0 0; }
 
 /* Draw Start */
 .dark {

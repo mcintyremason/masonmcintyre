@@ -27,5 +27,4 @@ router.get('/senior-project', function(req, res, next) {
               <script type="text/javascript" src="/js/projects/senior-project/run.js"></script>`,
    });
 });
-
 module.exports = router;
