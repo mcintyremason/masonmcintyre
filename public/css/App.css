@@ -115,14 +115,15 @@ body {
     display: grid;
     grid-template-columns: 5% auto 5%;
     grid-template-rows: auto;
-    grid-template-areas: ". experiences-container ." ". education-container ." ". misc-container ."; }
+    grid-template-areas: ". experiences-container ." ". education-container ." ". misc-container .";
+    margin: 20px 0;
+    min-height: 380px; }
     .App .main .experiences-container {
       grid-area: experiences-container;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto;
-      grid-template-areas: "experiences-title" "experiences";
-      margin: 30px 0 0; }
+      grid-template-areas: "experiences-title" "experiences"; }
       .App .main .experiences-container .experiences-title {
         grid-area: experiences-title; }
       .App .main .experiences-container .experiences {
@@ -194,7 +195,6 @@ body {
     grid-template-columns: auto 60% auto;
     grid-template-rows: auto;
     grid-template-areas: ". footer-icons .";
-    margin: 20px 0 0;
     padding: 20px 0;
     background-color: rgba(15, 15, 15, 0.9); }
     .App .footer a {
@@ -224,13 +224,13 @@ body {
   display: grid;
   grid-template-columns: 10% auto 10%;
   grid-template-rows: auto;
-  grid-template-areas: ". img-container ." ". about-container ."; }
+  grid-template-areas: ". img-container ." ". about-container .";
+  margin: 20px 0; }
   .App.index .main .img-container {
     grid-area: img-container;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 20px 0 0; }
+    flex-flow: column nowrap;
+    justify-content: center; }
     .App.index .main .img-container img {
       width: initial;
       max-height: 350px;
@@ -245,10 +245,10 @@ body {
   display: grid;
   grid-template-columns: 10% auto 10%;
   grid-template-rows: auto;
-  grid-template-areas: ". projects-container ."; }
+  grid-template-areas: ". projects-container .";
+  margin: 20px 0; }
   .App.projects .main .projects-container {
-    grid-area: projects-container;
-    margin: 20px 0 0; }
+    grid-area: projects-container; }
     .App.projects .main .projects-container .project:first-child {
       margin: 0; }
     .App.projects .main .projects-container .project {
@@ -302,13 +302,17 @@ body {
 
 /* Draw End */
 @media screen and (min-width: 375px) {
+  .App {
+    min-height: 480px; }
   .App.index .main {
     grid-template-columns: 15% auto 15%; }
     .App.index .main .img-container img {
       max-height: 625px;
       max-width: 500px;
       width: 100%;
-      height: 100%; } }
+      height: 100%; }
+  .App.projects .main {
+    min-height: 480px; } }
 
 @media screen and (min-width: 768px) {
   .App h1 {
@@ -355,7 +359,8 @@ body {
         height: 0;
         display: none; }
   .App .main {
-    grid-template-columns: 10% auto 10%; }
+    grid-template-columns: 10% auto 10%;
+    min-height: 722px; }
     .App .main .objective-container {
       grid-template-columns: 175px 75px auto;
       grid-template-rows: auto;
@@ -395,12 +400,14 @@ body {
           padding: 0 0 0 15px;
           margin: 0; }
   .App .footer {
-    grid-template-columns: auto 40% auto;
-    margin: 20px 0 0; }
+    grid-template-columns: auto 40% auto; }
   .App.index .main {
-    grid-template-columns: auto 500px auto; }
+    grid-template-columns: auto 500px auto;
+    min-height: 722px; }
     .App.index .main .about-container {
-      margin: 40px 0 0; } }
+      margin: 40px 0 0; }
+  .App.projects .main {
+    min-height: 722px; } }
 
 @media screen and (min-width: 996px) {
   .App li, .App p {
@@ -411,7 +418,8 @@ body {
   .App .hamburger {
     display: none; }
   .App .main {
-    grid-template-columns: 15% auto 15%; }
+    grid-template-columns: 15% auto 15%;
+    min-height: 722px; }
     .App .main .objective-container {
       grid-template-columns: 175px 75px auto;
       grid-template-rows: auto;
@@ -446,8 +454,11 @@ body {
   .App.index .main {
     grid-template-columns: auto 500px 5% 40% auto;
     grid-template-rows: auto;
-    grid-template-areas: ". img-container . about-container ."; }
+    grid-template-areas: ". img-container . about-container .";
+    min-height: 722px; }
     .App.index .main .about-container {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center; } }
+      justify-content: center; }
+  .App.projects .main {
+    min-height: 722px; } }

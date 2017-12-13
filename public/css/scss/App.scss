@@ -172,6 +172,8 @@ body{
       ". experiences-container ."
       ". education-container ."
       ". misc-container .";
+    margin:20px 0;
+    min-height: 380px;
 
     .experiences-container{
       grid-area:experiences-container;
@@ -182,7 +184,6 @@ body{
         "experiences-title"
         "experiences";
 
-      margin:30px 0 0;
 
       .experiences-title{
         grid-area: experiences-title;
@@ -309,7 +310,6 @@ body{
     grid-template-areas: 
       ". footer-icons .";
 
-    margin:20px 0 0;
     padding:20px 0;
     background-color:rgba(15, 15, 15, 0.9);
 
@@ -354,14 +354,14 @@ body{
     grid-template-areas: 
       ". img-container ."
       ". about-container .";
+      margin:20px 0;
 
 
     .img-container{
       grid-area:img-container;
       display:flex;
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
       justify-content: center;
-      margin:20px 0 0;
       
       img{
         width:initial;
@@ -379,7 +379,6 @@ body{
 }
 
 .App.projects{
-
   .main{
     grid-area:main;
     display:grid;
@@ -387,10 +386,10 @@ body{
     grid-template-rows: auto;
     grid-template-areas: 
       ". projects-container .";
+    margin:20px 0;
 
     .projects-container{
       grid-area:projects-container;
-      margin:20px 0 0;
 
       .project:first-child{
         margin:0;
@@ -461,6 +460,10 @@ body{
 }   
 /* Draw End */
 @media screen and (min-width: 375px){
+  .App{
+    min-height:480px;
+  }
+  
   .App.index{
     .main{
       grid-template-columns: 15% auto 15%;
@@ -473,6 +476,12 @@ body{
           height: 100%;
         }
       }
+    }
+  }
+
+  .App.projects{
+    .main{
+      min-height:480px;
     }
   }
 }
@@ -548,6 +557,7 @@ body{
 
     .main{
       grid-template-columns:10% auto 10%;
+      min-height: 722px;
 
       .objective-container{
         grid-template-columns: 175px 75px auto;
@@ -621,17 +631,23 @@ body{
     }
     .footer{
       grid-template-columns: auto 40% auto;
-      margin:20px 0 0;
     }  
   }
 
   .App.index{
     .main{
       grid-template-columns: auto 500px auto;
+      min-height: 722px;
 
       .about-container{
         margin:40px 0 0;
       }
+    }
+  }
+
+  .App.projects{
+    .main{
+      min-height:722px;
     }
   }
 }
@@ -653,6 +669,7 @@ body{
 
     .main{
       grid-template-columns:15% auto 15%;
+      min-height: 722px;
 
       .objective-container{
         grid-template-columns: 175px 75px auto;
@@ -719,12 +736,19 @@ body{
       grid-template-rows: auto;
       grid-template-areas: 
         ". img-container . about-container .";
+      min-height: 722px;
 
       .about-container{
         display:flex;
         flex-flow:column nowrap;
         justify-content: center;
       }
+    }
+  }
+
+  .App.projects{
+    .main{
+      min-height:722px;
     }
   }
 }
