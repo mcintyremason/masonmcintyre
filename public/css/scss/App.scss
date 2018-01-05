@@ -21,10 +21,7 @@ body{
     "footer";
 
   
-  background-color: #ffffff;
-  /*
-  background: linear-gradient(225deg, white, #c59c67);
-  */
+  background-color: #ffffff;  
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
   margin:0;
@@ -125,10 +122,9 @@ body{
 
         .hamburger{
           display: flex;
-          // display:none;
-          font-size: 2em;
           flex-flow: column nowrap;
           justify-content: center;
+          font-size: 2em;
           border:none;
         }
         .hamburger:hover{

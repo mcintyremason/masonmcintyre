@@ -32,7 +32,9 @@
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
     "sass": "^1.0.0-beta.3",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "node-fetch": "1.7.3",
+    "cryptocompare": "0.3.0"
   },
   "devDependencies": {
     "bower": "^1.8.0"

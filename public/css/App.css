@@ -12,9 +12,6 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "header-container" "main" "footer";
   background-color: #ffffff;
-  /*
-  background: linear-gradient(225deg, white, #c59c67);
-  */
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
   margin: 0;
@@ -86,9 +83,9 @@ body {
           display: none; }
         .App .header-container .header .header-nav .hamburger {
           display: flex;
-          font-size: 2em;
           flex-flow: column nowrap;
           justify-content: center;
+          font-size: 2em;
           border: none; }
         .App .header-container .header .header-nav .hamburger:hover {
           border: none;
