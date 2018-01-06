@@ -6,7 +6,7 @@ global.fetch = require('node-fetch')
 const cc = require('cryptocompare')
 
 router.get('/', function(req, res, next) {
-  res.render('crypget/index', {
+  res.render('projects/test', {
     title: 'Mason McIntyre',
     styles: ``,
     scripts: ``,
@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/from-file', function(req, res, next) {
   util.log(req);
-  res.render('crypget/index', {
+  res.render('projects/test', {
     title: 'Mason McIntyre',
     styles: ``,
     scripts: ``,

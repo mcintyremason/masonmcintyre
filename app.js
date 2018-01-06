@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var projects = require('./routes/projects');
 var crypget = require('./routes/crypget');
+var test = require('./routes/test');
 
 var app = express();
 

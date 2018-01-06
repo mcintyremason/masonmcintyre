@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <% include ../common/head %>
+  <body>
+    <div class="App" itemscope itemtype="http://schema.org/Person">
+      <% include ../common/header %>
+      <div class="main">
+        <form id="form-from-file" enctype="multipart/form-data" method="post" action="/crypget/from-file">
+          <input id="fileupload" name="myfile" type="file" />
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </div>
+      <% include ../common/footer %>
+    </div>
+  </body>
+</html>

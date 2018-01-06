@@ -239,6 +239,9 @@ body {
     .App.index .main .about-container p {
       margin: 10px 0 0; }
 
+.App.projects .header-container {
+  height: 74px; }
+
 .App.projects .main {
   grid-area: main;
   display: grid;
@@ -252,6 +255,9 @@ body {
       margin: 0; }
     .App.projects .main .projects-container .project {
       margin: 10px 0 0; }
+
+.App.crypget .header-container {
+  height: 74px; }
 
 /* Draw Start */
 .dark {
@@ -330,7 +336,8 @@ body {
     font-size: 1em;
     line-height: 1.3em; }
   .App .header-container {
-    max-height: 100px; }
+    max-height: 91px;
+    transition: .5s all; }
     .App .header-container .header {
       grid-template-columns: 10% auto auto 10%; }
       .App .header-container .header .header-nav {
@@ -405,7 +412,13 @@ body {
     min-height: 722px; }
     .App.index .main .about-container {
       margin: 40px 0 0; }
+  .App.projects .header-container {
+    height: auto; }
   .App.projects .main {
+    min-height: 722px; }
+  .App.crypget .header-container {
+    height: auto; }
+  .App.crypget .main {
     min-height: 722px; } }
 
 @media screen and (min-width: 996px) {
