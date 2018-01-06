@@ -336,6 +336,7 @@ body {
     font-size: 1em;
     line-height: 1.3em; }
   .App .header-container {
+    height: auto;
     max-height: 91px;
     transition: .5s all; }
     .App .header-container .header {
